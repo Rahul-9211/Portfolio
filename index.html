@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- CsS Link  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="resume.css">
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="testimonial.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="typewriter.css">
+    <link rel="stylesheet" href="burger.css">
+    <link rel="stylesheet" href="snow.css">
+    <link rel="stylesheet" media="screen and (max-width:1220px)" href="res.css">
+    <!-- Font LInks  -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- PortFolio SEction  -->
+    <section id="portfolio">
+
+        <!-- Header  -->
+        <div class="logo">
+            <h1>RawT.</h1>
+        </div>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+        <div class="burger_content">
+            <div class="burger2">
+                <div class="cross1"></div>
+                <div class="cross2"></div>
+            </div>
+
+            <div class="burger_content_list">
+                <ul>
+                    <li class="burger_list"><a href="#home" class="burger_active" onclick="currentSlide(1)">Home</a>
+                    </li>
+                    <li class="burger_list"><a href="#About" class="burger_active" onclick="currentSlide(2)">About</a>
+                    </li>
+                    <li class="burger_list"><a href="#Resume" class="burger_active" onclick="currentSlide(3)">Resume</a>
+                    </li>
+                    <li class="burger_list"><a href="#Service" class="burger_active"
+                            onclick="currentSlide(4)">Service</a></li>
+                    <li class="burger_list"><a href="#Blog" class="burger_active" onclick="currentSlide(5)">Blog</a>
+                    </li>
+                    <li class="burger_list"><a href="#Testimonial" class="burger_active"
+                            onclick="currentSlide(6)">Testimonial</a></li>
+                    <li class="burger_list"><a href="#Contact" class="burger_active"
+                            onclick="currentSlide(7)">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="burger_logo">
+                <h1>RawT.</h1>
+            </div>
+
+            <div class="burger_social">
+
+                <a class="burger_social_text" href="#">Follow Me</a>
+                <div class="burger_social_icon">
+                    <a class="burger_icon" href="#"><i class="fa fa-apple"></i></a>
+                    <a class="burger_icon" href="#"><i class="fa fa-instagram"></i></a>
+                    <a class="burger_icon" href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Social Section  -->
+        <div class="social">
+
+            <a class="social_text" href="#">Follow Me</a>
+            <a href="#">
+                <div class="social_line"></div>
+            </a>
+            <a class="icon" href="#"><i class="fa fa-apple"></i></a>
+            <a class="icon" href="#"><i class="fa fa-instagram"></i></a>
+            <a class="icon" href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+
+        <!-- check_list section  -->
+        <!-- check_list section  -->
+        <div class="check_list">
+            <!-- The dots/circles -->
+            <div>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+            </div>
+        </div>
+
+        <!-- Mid Sections ---------------- -->
+        <div class="slideshow-container">
+
+            <!-- HOME CONTAINER  -->
+            <div id="home" class="mySlides fade">
+                <div id="snowflakeContainer">
+                    <span class="snowflake"></span>
+                </div>
+                <div class="numbertext"></div>
+                <div class="content">
+                    <h1>We are DEVELOPER.</h1>
+                    <p id="typewriter" data-typewriter="'I'm a Graphic Designer |,'I'm a UI/UX Designer |,'I'm a Web Designer |,'I'm a Web Developer |"></p><span class="blinking-cursor">|</span>
+                </div>
+                <button class="btn1">My Portfolio</button>
+                <button class="btn2">Read More</button>
+            </div>
+
+            <!-- ABOUT CONTAINER -->
+            <div id="About" class="mySlides fade">
+                <div class="about_container">
+                    <div class="img"></div>
+                    <div class="data">
+                        <div class="written">
+                            <p>ABOUT ME</p>
+                            <h1>I am Rahul RawaT.</h1>
+                            <div class="divider"></div>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis expedita vero
+                                atque quas quidem ab, voluptatibus eos rem dolorem aspernatur laudantium. Omnis
+                                venda!
+                            </span>
+                        </div>
+                        <div class="skills">
+                            <div class="box">
+                                <div class="icon">
+                                    <i class="fa fa-twitter"></i>
+                                </div>
+                                <div class="box_content">
+                                    <h5>Web design</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="icon">
+                                    <i class="fa fa-twitter"></i>
+                                </div>
+                                <div class="box_content">
+                                    <h5>Graphic design</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="icon">
+                                    <i class="fa fa-twitter"></i>
+                                </div>
+                                <div class="box_content">
+                                    <h5>Development</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="icon">
+                                    <i class="fa fa-twitter"></i>
+                                </div>
+                                <div class="box_content">
+                                    <h5>Mobile Apps</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="icon">
+                                    <i class="fa fa-twitter"></i>
+                                </div>
+                                <div class="box_content">
+                                    <h5>UI/UX Designer</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="icon">
+                                    <i class="fa fa-twitter"></i>
+                                </div>
+                                <div class="box_content">
+                                    <h5>Marketing Online</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RESUME CONTAINER -->
+            <div id="Resume" class="mySlides fade">
+
+                <div class="page_heading">
+                    <p class="para">RESUME</p>
+                    <h3 class="title">Education & Experience</h3>
+                    <div class="divider">
+                        <div class="divider_1"></div>
+                        <div class="divider_2"></div>
+                        <div class="divider_3"></div>
+                        <div class="divider_4"></div>
+                    </div>
+
+                    <div class="resume_content">
+                        <div class="education">
+                            <h4>Education</h4>
+                            <ul>
+                                <li>
+                                    <div class="head">
+                                        <div class="head_content">
+                                            <span> <i class="fa fa-twitter"></i></span>
+                                            <h5>ARt UNIVERSITY</h5>
+                                            <h6>Art Director Course | New York</h6>
+                                        </div>
+                                    </div>
+                                    <div class="body">
+                                        <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
+                                            nec, vulputate eget, arcu. In enim justo.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="head">
+                                        <div class="head_content">
+                                            <span> <i class="fa fa-twitter"></i></span>
+                                            <h5>Royal Holloway</h5>
+                                            <h6>Bachelor Degree | London</h6>
+                                        </div>
+                                    </div>
+                                    <div class="body">
+                                        <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
+                                            nec, vulputate eget, arcu. In enim justo.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="head">
+                                        <div class="head_content">
+                                            <span> <i class="fa fa-twitter"></i></span>
+                                            <h5>Stanford University</h5>
+                                            <h6>Web Design Course | New York</h6>
+                                        </div>
+                                    </div>
+                                    <div class="body">
+                                        <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
+                                            nec, vulputate eget, arcu. In enim justo.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="experience">
+                            <h4>Experience</h4>
+                            <ul>
+                                <li>
+                                    <div class="head">
+                                        <div class="head_content">
+                                            <span> <i class="fa fa-twitter"></i></span>
+                                            <h5>UI/UX Designer</h5>
+                                            <h6>Google INC | New York (2016-2018)</h6>
+                                        </div>
+                                    </div>
+                                    <div class="body">
+                                        <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
+                                            nec, vulputate eget, arcu. In enim justo.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="head">
+                                        <div class="head_content">
+                                            <span> <i class="fa fa-twitter"></i></span>
+                                            <h5>Front-End Developer</h5>
+                                            <h6>Amazon INC | New York (2016-2018)</h6>
+                                        </div>
+                                    </div>
+                                    <div class="body">
+                                        <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
+                                            nec, vulputate eget, arcu. In enim justo.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="head">
+                                        <div class="head_content">
+                                            <span> <i class="fa fa-twitter"></i></span>
+                                            <h5>Back-End Developer</h5>
+                                            <h6>Facebook INC | New York (2016-2018)</h6>
+                                        </div>
+                                    </div>
+                                    <div class="body">
+                                        <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
+                                            nec, vulputate eget, arcu. In enim justo.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="resume_bars">
+                        <div class="row_1">
+                            <div class="bar">
+                                <span class="text_2">Web designing</span>
+                                <span class="percent">100%</span>
+                                <progress value="100" max="100">
+                                </progress>
+                            </div>
+                            <div class="bar">
+                                <span class="text_2">Mobile Apps</span>
+                                <span class="percent">90%</span>
+                                <progress value="90" max="100">
+                                </progress>
+                            </div>
+                            <div class="bar">
+                                <span class="text_2">Graphic Design</span>
+                                <span class="percent">75%</span>
+                                <progress value="75" max="100">
+                                </progress>
+                            </div>
+                        </div>
+
+                        <div class="row_2">
+                            <div class="bar">
+                                <span class="text_2">Creativity</span>
+                                <span class="percent">90%</span>
+                                <progress value="90" max="100">
+                                </progress>
+                            </div>
+                            <div class="bar">
+                                <span class="text_2">Design Creation</span>
+                                <span class="percent">75%</span>
+                                <progress value="75" max="100">
+                                </progress>
+                            </div>
+                            <div class="bar">
+                                <span class="text_2">Marketing Online</span>
+                                <span class="percent">90%</span>
+                                <progress value="90" max="100">
+                                </progress>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERVICE CONTAINER -->
+            <div id="Service" class="mySlides fade">
+
+                <!-- check_list section  -->
+                <div class="service_check_list">
+                    <!-- The dots/circles -->
+                    <div>
+                        <span class="service_dot" onclick="Slide(1)"></span>
+                        <span class="service_dot" onclick="Slide(2)"></span>
+                    </div>
+                </div>
+
+                <!-- SERvice page content  -->
+                <div class="service_page">
+                    <div class="page_heading">
+
+                        <p class="para">SERVICE</p>
+                        <h3 class="title">Let's See My Services</h3>
+                        <div class="divider">
+                            <div class="divider_1"></div>
+                            <div class="divider_2"></div>
+                            <div class="divider_3"></div>
+                            <div class="divider_4"></div>
+                        </div>
+                    </div>
+
+                    <div class="service_content slides transition">
+                        <div class="service_box">
+                            <span><i class="fa fa-twitter"></i></span>
+                            <h3>GRAPHIC DESIGN</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea odit alias ab assumenda?
+                            </p>
+                        </div>
+
+                        <div class="service_box">
+                            <span><i class="fa fa-twitter"></i></span>
+                            <h3>UI/UX DESIGN</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea odit alias ab assumenda?
+                            </p>
+                        </div>
+
+                        <div class="service_box">
+                            <span><i class="fa fa-twitter"></i></span>
+                            <h3>WEB DESIGN</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea odit alias ab assumenda?
+                            </p>
+                        </div>
+
+                        <div class="service_box">
+                            <span><i class="fa fa-twitter"></i></span>
+                            <h3>MOBILE APPS</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea odit alias ab assumenda?
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="service_content slides transition">
+                        <div class="service_box">
+                            <span><i class="fa fa-twitter"></i></span>
+                            <h3>WEB DESIGN</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea odit alias ab assumenda?
+                            </p>
+                        </div>
+
+                        <div class="service_box">
+                            <span><i class="fa fa-twitter"></i></span>
+                            <h3>MOBILE APPS</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea odit alias ab assumenda?
+                            </p>
+                        </div>
+
+                        <div class="service_box">
+                            <span><i class="fa fa-twitter"></i></span>
+                            <h3>CREATIVITY</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea odit alias ab assumenda?
+                            </p>
+                        </div>
+
+                        <div class="service_box">
+                            <span><i class="fa fa-twitter"></i></span>
+                            <h3>GRAPHIC DESIGN</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea odit alias ab assumenda?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- BLOG CONTAINER -->
+            <div id="Blog" class="mySlides fade">
+
+                <div class="blog_check_list">
+                    <!-- The dots/circles -->
+                    <div>
+                        <span class="blog_dot" onclick="blog_currentSlide(1)"></span>
+                        <span class="blog_dot" onclick="blog_currentSlide(2)"></span>
+                    </div>
+                </div>
+
+                <div class="page_heading">
+
+                    <p class="para">BLOG</p>
+                    <h3 class="title">Let's See My Blog</h3>
+                    <div class="divider">
+                        <div class="divider_1"></div>
+                        <div class="divider_2"></div>
+                        <div class="divider_3"></div>
+                        <div class="divider_4"></div>
+                    </div>
+
+                </div>
+
+                <div class="blog_content blog_slides flow">
+                    <div class="blog_box">
+                        <img src="blog_img1.jpg" alt="">
+                        <div class="blog_data">
+                            <i class="fa fa-twitter"></i>
+                            <a href="#">What was happended to all of the Design ideads?</a>
+                        </div>
+                        <div class="blog_date">
+                            <i class="fa fa-twitter"></i>
+                            May 21h , 2020
+                        </div>
+                    </div>
+                    <div class="blog_box">
+                        <img src="blog_img2.jpg" alt="">
+                        <div class="blog_data">
+                            <i class="fa fa-twitter"></i>
+                            <a href="#">The best Sale Marketer of The Next Year</a>
+                        </div>
+                        <div class="blog_date">
+                            <i class="fa fa-twitter"></i>
+                            May 21h , 2020
+                        </div>
+                    </div>
+                    <div class="blog_box">
+                        <img src="blog_img3.jpg" alt="">
+                        <div class="blog_data">
+                            <i class="fa fa-twitter"></i>
+                            <a href="#">What get in the way of greate stategy</a>
+                        </div>
+                        <div class="blog_date">
+                            <i class="fa fa-twitter"></i>
+                            May 21h , 2020
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog_content blog_slides flow">
+                    <div class="blog_box">
+                        <img src="blog_img4.jpg" alt="">
+                        <div class="blog_data">
+                            <i class="fa fa-twitter"></i>
+                            <a href="#">The best Sale Marketer of The Next Year</a>
+                        </div>
+                        <div class="blog_date">
+                            <i class="fa fa-twitter"></i>
+                            May 21h , 2020
+                        </div>
+                    </div>
+                    <div class="blog_box">
+                        <img src="blog_img1.jpg" alt="">
+                        <div class="blog_data">
+                            <i class="fa fa-twitter"></i>
+                            <a href="#">What was happended to all of the Design ideads?</a>
+                        </div>
+                        <div class="blog_date">
+                            <i class="fa fa-twitter"></i>
+                            May 21h , 2020
+                        </div>
+                    </div>
+                    <div class="blog_box">
+                        <img src="blog_img2.jpg" alt="">
+                        <div class="blog_data">
+                            <i class="fa fa-twitter"></i>
+                            <a href="#">The best Sale Marketer of The Next Year</a>
+                        </div>
+                        <div class="blog_date">
+                            <i class="fa fa-twitter"></i>
+                            May 21h , 2020
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- TESTIMONIAL CONTAINER -->
+            <div id="Testimonial" class="mySlides fade">
+
+                <div class="page_heading">
+                    <p class="para">TESTIMONIAL</p>
+                    <h3 class="title">Customer’s Stories</h3>
+                    <div class="divider">
+                        <div class="divider_1"></div>
+                        <div class="divider_2"></div>
+                        <div class="divider_3"></div>
+                        <div class="divider_4"></div>
+                    </div>
+                </div>
+
+                <div class="client_content">
+                    <div class="client_check_list">
+                        <!-- The dots/circles -->
+                        <div>
+                            <span class="client_dot" onclick="client_currentSlide(1)"></span>
+                            <span class="client_dot" onclick="client_currentSlide(2)"></span>
+                            <span class="client_dot" onclick="client_currentSlide(3)"></span>
+                        </div>
+                    </div>
+
+                    <div class="client">
+                        <div class="client_1 client_slides">
+                            <div class="client_heading">
+                                <span>Clients</span>
+                            </div>
+                            <div class="client_para">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cum quos eligendi
+                                    beatae. Digniss, exercitationem cum.</p>
+                            </div>
+                            <div class="client_img_data">
+                                <img src="client1.jpg" alt="">
+                                <h4>Rabbi Maxwell</h4>
+                                <h5>My Customer</h5>
+                            </div>
+                        </div>
+
+                        <div class="client_2 client_slides">
+                            <div class="client_heading">
+                                <span>Clients</span>
+                            </div>
+                            <div class="client_para">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cum quissimos
+                                    odio laboriosam harum ratione, exercitationem cum.</p>
+                            </div>
+                            <div class="client_img_data">
+                                <img src="client2.jpg" alt="">
+                                <h4>Sara Wander</h4>
+                                <h5>My Customer</h5>
+                            </div>
+                        </div>
+
+                        <div class="client_3 client_slides">
+                            <div class="client_heading">
+                                <span>Clients</span>
+                            </div>
+                            <div class="client_para">
+                                <p>. Aspernatur cum quos eligendi beatae. Dignissimos odio laboriosam harum ratione,
+                                    exercitationem cum.</p>
+                            </div>
+                            <div class="client_img_data">
+                                <img src="client3.jpg" alt="">
+                                <h4>Emy Jacman</h4>
+                                <h5>My Customer</h5>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="partner">
+                        <div class="partner_check_list">
+                            <!-- The dots/circles -->
+                            <div>
+                                <span class="partner_dot" onclick="partner_currentSlide(1)"></span>
+                                <span class="partner_dot" onclick="partner_currentSlide(2)"></span>
+                                <span class="partner_dot" onclick="partner_currentSlide(3)"></span>
+                            </div>
+                        </div>
+
+                        <div class="partner_1 partner_slides">
+                            <div class="partner_heading">
+                                <span>Clients</span>
+                            </div>
+                            <div class="partner_para">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisndi beatae. Dignissimos odio loriosam
+                                    harum ratione, exercitationem cum.</p>
+                            </div>
+                            <div class="partner_img_data">
+                                <img src="partner1.jpg" alt="">
+                                <h4>Rahul Rawat</h4>
+                                <h5>Web Developer</h5>
+                            </div>
+                        </div>
+
+                        <div class="partner_2 partner_slides">
+                            <div class="partner_heading">
+                                <span>Clients</span>
+                            </div>
+                            <div class="partner_para">
+                                <p>Lorem ipsum dolor sit amet consectedwew ewfwefwef tur adipisicing elit. Aspe odio
+                                    laboriosam harum ratione, exercitationem cum.</p>
+                            </div>
+                            <div class="partner_img_data">
+                                <img src="partner2.jpg" alt="">
+                                <h4>kourush Narasyami</h4>
+                                <h5>Web Developer</h5>
+                            </div>
+                        </div>
+
+                        <div class="partner_3 partner_slides">
+                            <div class="partner_heading">
+                                <span>Clients</span>
+                            </div>
+                            <div class="partner_para">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cum quos eligendi
+                                    beatae. Dignissimos odio laboriosam harum ratione, exercitationem cum.</p>
+                            </div>
+                            <div class="partner_img_data">
+                                <img src="partner3.jpg" alt="">
+                                <h4>Rabie Maxwell</h4>
+                                <h5>Web Developer</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="client_button">
+                    <button>let's work together</button>
+                </div>
+
+
+            </div>
+
+            <!-- CONTACT CONTAINER -->
+            <div id="Contact" class="mySlides fade">
+
+                <div class="contact_container">
+                    <div class="img"></div>
+
+                    <div class="data">
+                        <div class="written">
+                            <p>CONTACT ME</p>
+                            <h1>Get in touch with me today</h1>
+                            <div class="divider"></div>
+                            <div class="span">
+                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis expedita veroatque quas quidem ab, voluptatibus eos rem dolorem aspernatur laudantium. Omnis
+                                    venda!
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="contact_form">
+                            <div class="name_email">
+                                <input type="text" name="name">
+                                <label for="name" id="contact_name">Your Name</label>
+                                <input type="email" name="email" id=>
+                                <label for="email" id="contact_email">Your Email</label>
+                            </div>
+                            <div class="message">
+                                <textarea name="message" cols="30" rows="10"></textarea>
+                                <label for="contact_message" id="contact_message">Your Message</label>
+                            </div>
+                            <div class="button">
+                                <button>Send Message</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Down navbar  -->
+    <nav id="navbar">
+        <div class="navbar_list">
+            <ul>
+                <li class="list"><a href="#home" class="nav_list" onclick="currentSlide(1)">Home</a></li>
+                <li class="list"><a href="#About" class="nav_list" onclick="currentSlide(2)">About</a></li>
+                <li class="list"><a href="#Resume" class="nav_list" onclick="currentSlide(3)">Resume</a></li>
+                <li class="list"><a href="#Service" class="nav_list" onclick="currentSlide(4)">Service</a></li>
+                <li class="list"><a href="#Blog" class="nav_list" onclick="currentSlide(5)">Blog</a></li>
+                <li class="list"><a href="#Testimonial" class="nav_list" onclick="currentSlide(6)">Testimonial</a></li>
+                <li class="list"><a href="#Contact" class="nav_list" onclick="currentSlide(7)">Contact</a></li>
+            </ul>
+        </div>
+
+    </nav>
+</body>
+<script src="carousel.js"></script>
+<script src="https://kit.fontawesome.com/b9788382fb.js" crossorigin="anonymous"></script>
+
+</html>

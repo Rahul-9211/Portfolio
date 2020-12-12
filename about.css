@@ -1,0 +1,221 @@
+
+/* About ............................................... */
+#About{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #050607;
+    height: 800px;
+  }
+  
+  #About .about_container .img{
+    background: url('about.jpg')no-repeat center center/cover;
+    height: 594px;
+    width: 415px;
+    position: absolute;
+    left: 9%;
+    top: 120px;
+    border-radius: 3px;
+    margin: 0px 16px;
+  }
+  
+  #About .about_container .data{
+    height: 594px;
+    width: 665px;
+    position: absolute;
+    left: 42%;
+    top: 120px ;
+    margin-left: 31px;
+  }
+  
+  #About .about_container .data .written{
+    height: 230px;
+    width: 580px;
+    background: transparent;
+  }
+  
+  #About .about_container .data .written p{
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px;
+    letter-spacing: 0.6px;
+    font-weight: 700;
+    padding: 5px 0px 6px 15px;
+  }
+  
+  #About .about_container .data .written p::before{
+    content: "";
+    width: 36px;
+    height: 36px;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    position: absolute;
+    background: #300006;
+    z-index: -1;
+  }
+  
+  #About .about_container .data .written h1{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  #About .about_container .data .written .divider{
+    height: 4px;
+    background-color: #300006;
+    width: 63px;
+    margin-left: 10px;
+    margin-bottom: 19px;
+  }
+  
+  #About .about_container .data .written span{
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    letter-spacing: 0.75px;
+    font-weight: 500;
+  }
+  
+  #About .about_container .data .skills{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    margin-top: 20px;
+    height: 300px;
+    width: 665px;
+    background: transparent;
+  }
+  
+  #About .about_container .data .skills .box{
+    display: flex;
+    height: 100px;
+    width: 300px;
+    position: relative;
+    background: transparent;
+  }
+  
+  #About .about_container .data .skills .box::before{
+    content: "";
+    width: 36px;
+    height: 36px;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    position: absolute;
+    background: #300006;
+    z-index: 2;
+  }
+  
+  #About .about_container .data .skills .box i{
+    font-size: 28px;
+    position: absolute;
+    z-index: 2;
+    padding: 11px 0px 0px 12px;
+  }
+  
+  #About .about_container .data .skills .box p{
+    font-size: 12px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    font-weight: 500;
+  }
+  
+  #About .about_container .data .skills .box h5{
+    font-size: 14px;
+    margin-bottom: 10px;
+    letter-spacing: 0.75px;
+    font-weight: 700;
+  }
+  
+  #About .about_container .data .skills .box .box_content{
+    padding-left: 60px;
+  }
+
+
+  /* Responsive for Home ==========>>>>>>>>>>>>>> */
+  @media only screen and (max-width: 1125px){
+    #About .about_container .img{
+      width: 280px;
+      height: 545px;
+      left: 7%;
+    }
+    #About .about_container .data{
+      left: 35%;
+    }
+  }
+
+  @media only screen and (max-width: 1050px){
+    #About .about_container .img{
+      display: none;
+    }
+    #About .about_container .data{
+      left: 15%;
+      top: 10%;
+    }
+    
+    .logo{
+      position: absolute;
+    }
+    .burger{
+      position: absolute;
+    }
+  }
+
+  @media only screen and (max-width: 830px){
+    #About .about_container .data{
+      left: 10%;
+      top: 13%;
+    }
+  }
+  @media only screen and (max-width: 770px){
+    .check_list{
+      display: none;
+    }
+    #About .about_container .data{
+      left: 10%;
+      top: 11%;
+    }
+    #About .about_container .data .skills{
+      grid-template-columns: auto;
+    }
+    #About .about_container .data .skills .box p{
+      width: 500px;
+    }
+    #About{
+      height: 1250px;
+    }
+  }
+  @media only screen and (max-width: 640px){
+    #About .about_container .data{
+      left: 2%;
+      top: 11%;
+    }
+    #About .about_container .data .written span{
+    display: block;
+      width: 400px;
+    }
+    #About .about_container .data .written h1{
+      font-size: 26px;
+    }
+    #About .about_container .data .skills .box p{
+      width: 335px;
+    }
+  }
+  @media only screen and (max-width: 440px){
+    #About .about_container .data .written span{
+    display: block;
+      width: 300px;
+    }
+    #About .about_container .data .written h1{
+      font-size: 20px;
+    }
+    #About .about_container .data .skills .box p{
+      width: 225px;
+    }
+    #About .about_container .data .skills{
+      margin-top: 63px;
+  }
+}

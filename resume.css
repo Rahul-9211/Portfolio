@@ -1,0 +1,360 @@
+/* Resume ............................................... */
+#Resume{
+    background-color: #050607;
+    height: 100%;
+    width: 100%;
+  }
+  
+  #Resume .resume_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    letter-spacing: 0.75px;
+  }
+  
+  #Resume .resume_content li{
+    list-style: none;
+  }
+  
+  #Resume .resume_content li{
+    position: relative;
+    z-index: 1;
+  }
+  
+  #Resume .resume_content li::before{
+    top: -18px;
+    left: 7px;
+    width: 1px;
+    height: 100%;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: var(--primary-c);
+  }
+  
+  #Resume .resume_content .education{
+    background-color: transparent;
+    height: 578px;
+    width: 570px;
+    padding: 0px 15px;
+  }
+  
+  #Resume .resume_content .experience{
+    background-color: transparent;
+    height: 578px;
+    width: 570px;
+    padding: 0px 15px;
+  }
+  
+  #Resume .resume_content h4{
+    font-size: 20px;
+    padding-left: 35px;
+    line-height: 1;
+    margin-bottom: 15px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+  }
+  
+  #Resume .resume_content h4::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    top: 2px;
+    left: 0;
+    border-radius: 50%;
+    position: absolute;
+    background: #300006;
+    z-index: -1;
+  }
+  
+  /* REsume DATA ............... */
+  
+  #Resume .resume_content .head{
+    padding-top: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+  }
+  
+  #Resume .resume_content .head .head_content{
+    padding-left: 30px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  #Resume .resume_content .head .head_content::before{
+    width: 20px;
+    height: 1px;
+    top: 18px;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: var(--primary-c);
+    left: 9px;
+  }
+  
+  #Resume .resume_content .head .head_content span i{
+    font-size: 30px;
+    position: absolute;
+    margin: 17px 0px 0px 17px;
+  }
+  
+  #Resume .resume_content .head .head_content span::before{
+    content: "";
+    width: 36px;
+    height: 36px;
+    top: -1px;
+    left: -1px;
+    margin: 2px 0px 0px 31px;
+    border-radius: 50%;
+    position: absolute;
+    background: #300006;
+    z-index: -1;
+  }
+  
+  #Resume .resume_content .head .head_content h5{
+    padding-left: 60px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  #Resume .resume_content .head .head_content h6{
+    padding-left: 60px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  #Resume .resume_content .body{
+    padding: 20px 36px;
+  }
+  
+  #Resume .resume_content .body p{
+     font-size: 12px;
+     line-height: 1.8;
+     font-weight: 500;
+    padding-left: 10px;
+  }
+  
+  /* Resume boxes .......... */
+  
+  #Resume .resume_bars{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #Resume .resume_bars .row_1,
+  #Resume .resume_bars .row_2{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+  }
+  
+  #Resume .resume_bars .row_1 .bar,
+  #Resume .resume_bars .row_2 .bar{
+    height: 130px;
+    width: 380px;
+  }
+  
+  
+  #Resume .resume_bars .row_2 .bar .text_2,
+  #Resume .resume_bars .row_1 .bar .text_2{
+    position: absolute;
+    text-align: left;
+    width: 170px;
+    padding-left: 14px;
+    font-size: 14px;
+    font-weight: 700;
+    z-index: 1;
+    letter-spacing: 0.75px;
+  }
+  
+  #Resume .resume_bars .row_1 .bar .text_2::before,
+  #Resume .resume_bars .row_2 .bar .text_2::before{
+    content: "";
+    width: 36px;
+    height: 36px;
+    top: -9px;
+    left: -35px;
+    margin: 2px 0px 0px 31px;
+    border-radius: 50%;
+    position: absolute;
+    background: #300006;
+    z-index: -1;
+  }
+  
+  #Resume .resume_bars .row_1 .bar .percent,
+  #Resume .resume_bars .row_2 .bar .percent{
+    position: absolute;
+    text-align: right;
+    width: 300px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.75px;
+  }
+  
+  #Resume .resume_bars .bar progress{
+    appearance: none;
+    margin-top: 75px;
+    width: 300px;
+    height: 12px;
+  }
+  
+  progress[value]::-webkit-progress-value {
+    background-image:
+         -webkit-linear-gradient(45deg,hsla(0,0%,100%,.15) 25%,transparent 0,transparent 50%,hsla(0,0%,100%,.15) 0,hsla(0,0%,100%,.15) 75%,transparent 0,transparent);
+      border-radius: 10px; 
+      background-color: #300006;
+      background-size: 1rem 1rem;
+  }
+
+
+
+
+  /* Responsive for Home ==========>>>>>>>>>>>>>> */
+  
+  @media only screen and (max-width: 1200px){
+    #Resume .resume_content .education{
+      width: 450px;
+      padding: 0px 15px;
+    }
+    
+    #Resume .resume_content .experience{
+      width: 450px;
+      padding: 0px 15px;
+    }
+    #Resume .resume_bars .row_1,
+    #Resume .resume_bars .row_2{
+      flex-direction: column;
+      margin: 0px 20px;
+    }
+    #Resume .resume_bars .row_1{
+      margin-left: 145px;
+    }
+    #Resume .resume_bars{
+      flex-direction: row;
+      margin-top: 170px;
+    }
+    
+  }
+  @media only screen and (max-width: 1000px){
+    .social{
+      display: none;
+    }
+    .check_list{
+      display: none;
+    }
+    #Resume .resume_content .education{
+      width: 90%;
+    }
+    #Resume .resume_content .experience{
+      width: 90%;
+    }
+    #Resume .resume_bars .row_1 .bar,
+    #Resume .resume_bars .row_2 .bar{
+      height: 120px;
+      width: 300px;
+    }
+    #Resume .resume_bars .row_2 .bar{
+      margin-right: 60px;
+    }
+    #Resume .resume_bars .row_1{
+      margin-left: 90px;
+    }
+  }
+
+  @media only screen and (max-width: 840px){
+    #Resume .resume_bars .row_1 .bar .percent,
+    #Resume .resume_bars .row_2 .bar .percent{
+      width: 250px;
+    }
+    #Resume .resume_bars .bar progress{
+      width: 250px;
+    }
+    #Resume .resume_bars{
+      margin-top: 190px;
+    }
+  }
+
+  @media only screen and (max-width: 700px){
+    #Resume .resume_content{
+      flex-direction: column;
+    }
+    #Resume .resume_content .education{
+      width: 90%;
+    }
+    #Resume .resume_content .experience{
+      width: 90%;
+      margin-top: 100px;
+    }
+    #Resume .resume_bars{
+      flex-direction: column;
+    }
+    #Resume .resume_bars .bar progress{
+      width: 80vw;
+    }
+    #Resume .resume_bars .row_1 .bar .percent,
+    #Resume .resume_bars .row_2 .bar .percent{
+      width: 80vw;
+    }
+    #Resume .resume_bars .row_1,
+    #Resume .resume_bars .row_2{
+      margin: 0px 90px;
+    }
+    #Resume .resume_bars .row_2{
+      margin-top: 10px;
+    }
+    .page_heading .title{
+      font-size: 26px;
+    }
+    #Resume .resume_bars{
+      margin-top: 150px;
+      padding-bottom: 130px;
+    }
+  }
+
+  @media only screen and (max-width: 580px){
+    #Resume .resume_content .education{
+      width: 90%;
+    }
+    #Resume .resume_content .experience{
+      width: 90%;
+    }
+  #Resume .resume_content .experience {
+    margin-top: 149px;
+  }
+  }
+
+  @media only screen and (max-width: 470px){
+    .page_heading .divider {
+      margin-top: 41px;
+    }
+    #Resume .resume_content .experience {
+      margin-top: 250px;
+    }
+    #Resume .resume_bars{
+      margin-top: 290px;
+    }
+  }
+
+  @media only screen and (max-width: 350px){
+
+    #Resume .resume_content .experience {
+      margin-top: 330px;
+    }
+    #Resume .resume_bars{
+      margin-top: 320px;
+    }
+  }
+
+
+
+  
